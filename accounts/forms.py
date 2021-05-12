@@ -38,22 +38,20 @@ class ClientSignUpForm(UserCreationForm):
 
 
 class MechanicSignUpForm(UserCreationForm):
-    password = forms.CharField(max_length=80, widget=forms.PasswordInput)
-
     class Meta(UserCreationForm.Meta):
         model = User
         fields = ['email', 'username', ]
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs) 
         self.fields['email'].widget.attrs.update(
-            {'placeholder': 'Email Address', 'class': 'form-control'})
+            {'placeholder': 'Email Address', 'class': 'form-control floating'})
         self.fields['username'].widget.attrs.update(
-            {'placeholder': 'Username', 'class': 'form-control'})
+            {'placeholder': 'Username', 'class': 'form-control floating'})
         self.fields['password1'].widget.attrs.update(
-            {'placeholder': 'Password', 'class': 'form-control'})
+            {'placeholder': 'Password', 'class': 'form-control floating'})
         self.fields['password2'].widget.attrs.update(
-            {'placeholder': 'Confirm Password', 'class': 'form-control'})
+            {'placeholder': 'Confirm Password', 'class': 'form-control floating'})
 
         def clean_email(self):
             email = self.cleaned_data.get('email')
@@ -76,7 +74,7 @@ class MechanicSignUpForm(UserCreationForm):
 class LoginForm(forms.Form):
     email_address = forms.EmailField(label="Email Address", max_length=255,)
     email_address.widget.attrs.update(
-        {'class': 'form-control', 'placeholder': 'Email Address'})
+        {'class': 'form-control floating', 'placeholder': 'Email Address'})
     password = forms.CharField(widget=forms.PasswordInput, max_length=255)
     password.widget.attrs.update(
-        {'class': 'form-control', 'placeholder': 'Password'})
+        {'class': 'form-control floating', 'placeholder': 'Password'})

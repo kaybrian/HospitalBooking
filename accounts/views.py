@@ -20,10 +20,7 @@ class Patient_register(CreateView):
         password2 = form.cleaned_data.get('password2')
         username = form.cleaned_data.get('username')
         email = form.cleaned_data.get('email')
-        print(password2)
-        print(password1)
-        print(email)
-        print(username)
+        
 
         if form.is_valid():
             if password1 == password2:
@@ -37,25 +34,27 @@ class Patient_register(CreateView):
 
 
 
-# class Mechanic_register(CreateView):
-#     model = User
-#     form_class = MechanicSignUpForm
-#     template_name = 'accounts/signup2.html'
+class Doctor_register(CreateView):
+    model = User
+    form_class = MechanicSignUpForm
+    template_name = 'accounts/doctor.html'
 
-#     def validate(self, form):
-#         password1 = form.cleaned_data.get('password1')
-#         password2 = form.cleaned_data.get('password2')
-#         username = form.cleaned_data.get('username')
-#         email = form.cleaned_data.get('email')
+    def validate(self, form):
+        password1 = form.cleaned_data.get('password1')
+        password2 = form.cleaned_data.get('password2')
+        username = form.cleaned_data.get('username')
+        email = form.cleaned_data.get('email')
+        
+        print(password2)
+        print(password1)
+        print(email)
+        print(username)
 
-#         if form.is_valid():
-#             if password1 == password2:
-#                 user = User.objects.create(
-#                     username=username, email=email, password=password1)
-#                 user.save()
-
-    # we are left to login in the users and redirecting them to thier respect page views
-    # a function to validate the form sent in form the user and alsowe nee to find the differnt pages
+        if form.is_valid():
+            if password1 == password2:
+                user = User.objects.create(
+                    username=username, email=email, password=password1)
+                user.save()
 
 
 class LoginView(View):

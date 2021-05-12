@@ -18,7 +18,9 @@
               <div class="login-header">
                 <h3>
                   Patient Register
-                  <a href="doctor-register.html">Are you a Doctor?</a>
+                  <a href="{% url 'accounts:doctorsignup' %}"
+                    >Are you a Doctor?</a
+                  >
                 </h3>
               </div>
 
@@ -62,7 +64,7 @@
                   >
                 </div>
                 <div class="text-right">
-                  <a class="forgot-link" href="login.html"
+                  <a class="forgot-link" href="{% url 'accounts:login' %}"
                     >Already have an account?</a
                   >
                 </div>
