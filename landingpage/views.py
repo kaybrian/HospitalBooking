@@ -1,3 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+
+def Index(request):
+    context = {}
+    return render(request,'landingpage/index.html',context)
+
+
+def Blog(request):
+    context = {}
+    return render(request, 'landingpage/blog.html',context)

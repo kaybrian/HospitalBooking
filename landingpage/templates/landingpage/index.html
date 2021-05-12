@@ -1,0 +1,856 @@
+{% extends 'landingpage/base.html' %} {% load static %} {% block content %}
+
+<!-- Home Banner -->
+<section class="section section-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6"></div>
+      <div class="col-12 col-md-6">
+        <div class="banner-wrapper">
+          <div class="banner-header">
+            <h5>Be Hear Healthy</h5>
+            <h1>Lorem Ipsum <br /><span>simply simply simply</span></h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the indstandard dummy text ever
+            </p>
+            <div class="btn-col">
+              <ul>
+                <li>
+                  <a href="search.html" class="btn btn-fill">Read More</a>
+                </li>
+                <li>
+                  <a href="login.html" class="btn btn-notfill">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- Search Section -->
+<section class="search-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-xl-8">
+        <div class="search-box">
+          <h2>Search Doctor, <br />Make an Appointment !</h2>
+          <div class="form-col">
+            <form method="post" action="">
+              <ul class="d-flex flex-wrap">
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Location"
+                    class="form-control"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Gender"
+                    class="form-control"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    class="form-control"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn-submit form-control"
+                  />
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4"></div>
+    </div>
+  </div>
+  <div class="search-right-img">
+    <img src="{% static 'assets/img/search-img.png' %}" alt="" />
+  </div>
+</section>
+<!-- Search Section -->
+
+<!-- Popular Section -->
+<section class="section popular-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h5>WHAT WE HAVE</h5>
+      <h2>Heart Care based Solutions</h2>
+      <p class="sub-title">
+        We merge two services consulting and brilliant client Services for the
+        patient healthcare. Used latest technology in hospital.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="solution-slider slider">
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution1.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-01.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>SURGERY</h5>
+              <h3 class="title">Heart Surgery</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution2.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-02.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>SAVING LIVES</h5>
+              <h3 class="title">Valve Diseases</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution3.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-03.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>GREAT CARE</h5>
+              <h3 class="title">Children’s services</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution1.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-01.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>SURGERY</h5>
+              <h3 class="title">Heart Surgery</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution2.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-02.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>SAVING LIVES</h5>
+              <h3 class="title">Valve Diseases</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+
+          <!-- Solution Widget -->
+          <div class="profile-widget">
+            <div class="doc-img">
+              <a href="doctor-profile.html">
+                <img
+                  class="img-fluid"
+                  alt="User Image"
+                  src="{% static 'assets/img/solution3.png' %}"
+                />
+              </a>
+            </div>
+            <div class="pro-content">
+              <div class="specialities-img">
+                <img
+                  src="{% static 'assets/img/specialities/specialities-03.png' %}"
+                  alt=""
+                />
+              </div>
+              <h5>GREAT CARE</h5>
+              <h3 class="title">Children’s services</h3>
+              <p class="speciality">
+                Lorem Ipsum is simply dummy text the printing and typesetting
+                industry.
+              </p>
+              <a href="doctor-profile.html" class="readmore-btn"
+                ><i class="fas fa-chevron-circle-right"></i> Read more</a
+              >
+            </div>
+          </div>
+          <!-- /Solution Widget -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Popular Section -->
+
+<!-- About Us -->
+<section class="section aboutus-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="left">
+          <div class="section-header">
+            <h5>WHY CHOOSE US</h5>
+            <h2>We are Achieve the Success of <span>Heart Surgery</span></h2>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <div class="feature-col row">
+            <div class="col-12 col-md-6">
+              <div class="feature-box">
+                <div class="corner-img">
+                  <img src="{% static 'assets/img/feature1.png' %}" alt="" />
+                </div>
+                <h2>870+</h2>
+                <h6>Satisfied Patients</h6>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="feature-box">
+                <div class="corner-img">
+                  <img src="{% static 'assets/img/feature2.png' %}" alt="" />
+                </div>
+                <h2>1500+</h2>
+                <h6>Patient/Year</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="right">
+          <img src="{% static 'assets/img/about-us.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /About Us -->
+
+<!-- Feature List -->
+<section class="feature-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-list-box">
+          <div class="number-col text-right"><h5>01</h5></div>
+          <div class="feature-icon">
+            <img src="{% static 'assets/img/icon1.png' %}" alt="" />
+          </div>
+          <h4>Personalized <br />Healthcare</h4>
+          <div class="plus-icon text-right">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-list-box">
+          <div class="number-col text-right"><h5>02</h5></div>
+          <div class="feature-icon">
+            <img src="{% static 'assets/img/icon2.png' %}" alt="" />
+          </div>
+          <h4>Professional <br />Team</h4>
+          <div class="plus-icon text-right">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-list-box">
+          <div class="number-col text-right"><h5>03</h5></div>
+          <div class="feature-icon">
+            <img src="{% static 'assets/img/icon3.png' %}" alt="" />
+          </div>
+          <h4>Regularly <br />checkup</h4>
+          <div class="plus-icon text-right">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-list-box">
+          <div class="number-col text-right"><h5>04</h5></div>
+          <div class="feature-icon">
+            <img src="{% static 'assets/img/icon4.png' %}" alt="" />
+          </div>
+          <h4>Latest <br />Technology</h4>
+          <div class="plus-icon text-right">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Feature List -->
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header text-center">
+      <h5>TESTIMONIALS</h5>
+      <h2>What Patient say about us</h2>
+      <p class="sub-title">
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Slider -->
+        <div class="testimonials-slider slider">
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Ami Smith</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient1.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Brian Burcham</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient2.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>James Smith</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient3.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Ana Proctor</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient4.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Joseph Butler</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient5.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Anna Norton</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+
+          <!-- Slider Item -->
+          <div class="testimonials-item">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="">
+                    <img
+                      src="{% static 'assets/img/patients/patient6.jpg' %}"
+                      alt=""
+                      width="83"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="patient-details">
+                    <h5>Bryce Cotten</h5>
+                    <h6>Heart Implant</h6>
+                  </div>
+                  <div>
+                    <img
+                      src="{% static 'assets/img/blockquotes.png' %}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Slider Item -->
+        </div>
+        <!-- /Slider -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Testimonials -->
+
+<!--  Choose Us -->
+<section class="choose-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="left">
+          <div class="section-header">
+            <h5>OUR BENEFITS</h5>
+            <h2>Choose Our Cardiology <br />Healthcare Solutions</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="choose-col">
+                <div class="top-title d-flex align-items-center">
+                  <span
+                    ><img src="{% static 'assets/img/check-mark.png' %}" alt=""
+                  /></span>
+                  <span>Expert Nursing</span>
+                </div>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 500s, when an unknown printer took a galley of type
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="choose-col">
+                <div class="top-title d-flex align-items-center">
+                  <span
+                    ><img src="{% static 'assets/img/check-mark.png' %}" alt=""
+                  /></span>
+                  <span>Heath care Expert</span>
+                </div>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 500s, when an unknown printer took a galley of type
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="choose-col">
+                <div class="top-title d-flex align-items-center">
+                  <span
+                    ><img src="{% static 'assets/img/check-mark.png' %}" alt=""
+                  /></span>
+                  <span>Individual Approach</span>
+                </div>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 500s, when an unknown printer took a galley of type
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="choose-col">
+                <div class="top-title d-flex align-items-center">
+                  <span
+                    ><img src="{% static 'assets/img/check-mark.png' %}" alt=""
+                  /></span>
+                  <span>Emergency Help</span>
+                </div>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 500s, when an unknown printer took a galley of type
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="right"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  /Choose Us -->
+
+<!-- Blog -->
+<section class="blog-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h5>READ OUR BLOG</h5>
+      <h2>Featured News and Advices</h2>
+      <p class="sub-title">
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took
+      </p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-widget">
+          <a href="blog-list.html" class="blog-img">
+            <img src="{% static 'assets/img/blog1.png' %}" alt="" />
+          </a>
+          <div class="date-col">
+            <span>14 Aug 2020</span>
+          </div>
+          <div class="blog-content text-center">
+            <h6>Expert Nursing</h6>
+            <h5>Is Running Really Good for the Heart?</h5>
+            <p>
+              There are lorem ipsum is simply free many variations of Ipsum the
+              majority suffered.
+            </p>
+            <a href="blog-list.html" class="readmore-btn" tabindex="-1"
+              ><i class="fas fa-chevron-circle-right"></i> Read more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-widget">
+          <a href="blog-list.html" class="blog-img">
+            <img src="{% static 'assets/img/blog2.png' %}" alt="" />
+          </a>
+          <div class="date-col">
+            <span>12 Aug 2020</span>
+          </div>
+          <div class="blog-content text-center">
+            <h6>Heath care Expert</h6>
+            <h5>Modeling data increase to endovascular therapy</h5>
+            <p>
+              There are lorem ipsum is simply free many variations of Ipsum the
+              majority suffered.
+            </p>
+            <a href="blog-list.html" class="readmore-btn" tabindex="-1"
+              ><i class="fas fa-chevron-circle-right"></i> Read more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-widget">
+          <a href="blog-list.html" class="blog-img">
+            <img src="{% static 'assets/img/blog3.png' %}" alt="" />
+          </a>
+          <div class="date-col">
+            <span>10 Aug 2020</span>
+          </div>
+          <div class="blog-content text-center">
+            <h6>Individual Approach</h6>
+            <h5>Get the Exercise Tips for Limited Mobility</h5>
+            <p>
+              There are lorem ipsum is simply free many variations of Ipsum the
+              majority suffered.
+            </p>
+            <a href="blog-list.html" class="readmore-btn" tabindex="-1"
+              ><i class="fas fa-chevron-circle-right"></i> Read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog -->
+
+{% endblock content %}
