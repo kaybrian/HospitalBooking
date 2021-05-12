@@ -10,29 +10,31 @@ from.models import *
 
 
 
-# class client_register(CreateView):
-#     model = User
-#     form_class = ClientSignUpForm
-#     template_name = 'accounts/signup.html'
+class Patient_register(CreateView):
+    model = User
+    form_class = ClientSignUpForm
+    template_name = 'accounts/patientsignup.html'
 
-#     def validate(self, form):
-#         password1 = form.cleaned_data.get('password1')
-#         password2 = form.cleaned_data.get('password2')
-#         username = form.cleaned_data.get('username')
-#         email = form.cleaned_data.get('email')
+    def validate(self, form):
+        password1 = form.cleaned_data.get('password1')
+        password2 = form.cleaned_data.get('password2')
+        username = form.cleaned_data.get('username')
+        email = form.cleaned_data.get('email')
+        print(password2)
+        print(password1)
+        print(email)
+        print(username)
 
-#         if form.is_valid():
-#             if password1 == password2:
-#                 user = User.objects.create(
-#                     username=username, email=email, password=password1)
-#                 user.save()
-#                 user = authenticate(email=email, password=password1)
+        if form.is_valid():
+            if password1 == password2:
+                user = User.objects.create(
+                    username=username, email=email, password=password1)
+                user.save()
+                user = authenticate(email=email, password=password1)
 
-#     def get_success_url(self):
-#         return reverse('cilenthome')
+    # def get_success_url(self):
+    #     return reverse('cilenthome')
 
-    # we are left to login in the users and redirecting them to thier respect page views
-    # a function to validate the form sent in form the user and alsowe nee to find the differnt pages
 
 
 # class Mechanic_register(CreateView):

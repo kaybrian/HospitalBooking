@@ -12,13 +12,13 @@ class ClientSignUpForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['email'].widget.attrs.update(
-            {'placeholder': 'Email Address', 'class': 'form-control'})
+            {'placeholder': 'Email Address', 'class': 'form-control floating'})
         self.fields['username'].widget.attrs.update(
-            {'placeholder': 'Username', 'class': 'form-control'})
+            {'placeholder': 'Username', 'class': 'form-control floating'})
         self.fields['password1'].widget.attrs.update(
-            {'placeholder': 'Password', 'class': 'form-control'})
+            {'placeholder': 'Password', 'class': 'form-control floating'})
         self.fields['password2'].widget.attrs.update(
-            {'placeholder': 'Confirm Password', 'class': 'form-control'})
+            {'placeholder': 'Confirm Password', 'class': 'form-control floating'})
 
         def clean_email(self):
             email = self.cleaned_data.get('email')
@@ -30,7 +30,7 @@ class ClientSignUpForm(UserCreationForm):
     @transaction.atomic
     def save(self):
         user = super().save(commit=False)
-        user.is_client = True
+        user.is_patient = True
         user.save()
         client = PatientProfile.objects.create(user=user)
         client.save()
