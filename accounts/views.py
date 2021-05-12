@@ -73,13 +73,13 @@ class LoginView(View):
 
         user = authenticate(request, email=email, password=password)
 
-        # if user is not None and user.is_client:
-        #     login(request, user)
-        #     return HttpResponseRedirect(reverse('cilenthome'))
-        # elif user is not None and user.is_mechanic:
-        #     return HttpResponse("Logined in the mechanic user")
-        # else:
-        #     return HttpResponse("Sorry No such user")
+        if user is not None and user.is_patient:
+            login(request, user)
+            return HttpResponse("logined as a Patient")
+        elif user is not None and user.is_Doctor:
+            return HttpResponse("Logined in the Doctor")
+        else:
+            return HttpResponse("Sorry No such user")
 
 
 def logout_view(request):
