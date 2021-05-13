@@ -84,4 +84,4 @@ class LoginView(View):
 
 def logout_view(request):
     logout(request)
-    return render(request, '/')
+    return redirect('landing:index')
