@@ -75,7 +75,7 @@ class LoginView(View):
 
         if user is not None and user.is_patient:
             login(request, user)
-            return HttpResponse("logined as a Patient")
+            return redirect('patient:PatientDashboard')
         elif user is not None and user.is_Doctor:
             return HttpResponse("Logined in the Doctor")
         else:

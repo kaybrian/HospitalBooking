@@ -6,10 +6,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ysf=sv6m541r6v70bt$(@b(oo&_ycp8k3u$o8j_ieg+3l26-#5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -33,6 +29,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'landingpage',
     'phonenumber_field',
+    'Patient.apps.PatientConfig',
 ]
 
 AUTH_USER_MODEL= 'accounts.User'
