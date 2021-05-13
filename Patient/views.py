@@ -32,3 +32,9 @@ class Profile(View):
     #         return HttpResponse("Logined in the Doctor")
     #     else:
     #         return HttpResponse("Sorry No such user")
+
+
+
+def Favourites(request):
+    context = {}
+    return render(request,'Patient/favourites.html',context)

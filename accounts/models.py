@@ -20,11 +20,16 @@ class User(AbstractUser):
 class PatientProfile(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name='client_profile')
-    location = models.CharField(max_length=100, null=True, blank=True)
-    phone = PhoneNumberField(
+    Address = models.CharField(max_length=100, null=True, blank=True)
+    Mobile = PhoneNumberField(
         max_length=10, blank=False, unique=True, null=True)
     profile_image = models.ImageField(
         default='default.png', null=True, upload_to='profile_pics')
+    Date_Of_Birth = models.DateField(auto_now_add=False, null=True, blank=True)
+    Blood_Group = models.CharField(max_length=50,null=True, blank=True)
+    city = models.CharField(max_length=50,null=True, blank=True)
+    District = models.CharField(max_length=150,null=True, blank=True)
+    Country = models.CharField(max_length=150,null=True, blank=True)
 
     def __str__(self):
         return self.user.email

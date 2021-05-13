@@ -72,10 +72,12 @@
             </div>
             <ul class="main-nav">
               <li>
-                <a href="index-2.html">Patient Dashboard</a>
+                <a href="{% url 'patient:PatientDashboard' %}"
+                  >Patient Dashboard</a
+                >
               </li>
               <li>
-                <a href="index-2.html">Profile Settings</a>
+                <a href="{% url 'patient:profile' %}">Profile Settings</a>
               </li>
               <li>
                 <a href="index-2.html">Search Doctor</a>
@@ -123,10 +125,12 @@
                     <p class="text-muted mb-0">Patient</p>
                   </div>
                 </div>
-                <a class="dropdown-item" href="patient-dashboard.html"
+                <a
+                  class="dropdown-item"
+                  href="{% url 'patient:PatientDashboard' %}"
                   >Dashboard</a
                 >
-                <a class="dropdown-item" href="profile-settings.html"
+                <a class="dropdown-item" href="{% url 'patient:profile' %}"
                   >Profile Settings</a
                 >
                 <a class="dropdown-item" href="login.html">Logout</a>

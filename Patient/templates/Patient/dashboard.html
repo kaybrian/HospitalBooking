@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb" class="page-breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index-2.html">Home</a>
+              <a href="{% url 'patient:PatientDashboard' %}">Home</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
               Dashboard
@@ -53,13 +53,13 @@
             <nav class="dashboard-menu">
               <ul>
                 <li class="active">
-                  <a href="patient-dashboard.html">
+                  <a href="{% url 'patient:PatientDashboard' %}">
                     <i class="fas fa-columns"></i>
                     <span>Dashboard</span>
                   </a>
                 </li>
                 <li>
-                  <a href="favourites.html">
+                  <a href="{% url 'patient:favourites' %}">
                     <i class="fas fa-bookmark"></i>
                     <span>Favourites</span>
                   </a>
@@ -74,7 +74,7 @@
                 </li>
                 {% endcomment %}
                 <li>
-                  <a href="profile-settings.html">
+                  <a href="{% url 'patient:profile' %}">
                     <i class="fas fa-user-cog"></i>
                     <span>Profile Settings</span>
                   </a>
