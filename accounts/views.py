@@ -76,10 +76,12 @@ class LoginView(View):
         if user is not None and user.is_patient:
             login(request, user)
             return redirect('patient:PatientDashboard')
+
         elif user is not None and user.is_Doctor:
-            return HttpResponse("Logined in the Doctor")
+            login(request, user)
+            return redirect('doctors:Doctordashboard')
         else:
-            return HttpResponse("Sorry No such user")
+            return redirect('accounts:login')
 
 
 def logout_view(request):

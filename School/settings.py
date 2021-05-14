@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'landingpage',
     'phonenumber_field',
     'Patient.apps.PatientConfig',
+    'Doctors.apps.DoctorsConfig',
 ]
 
 AUTH_USER_MODEL= 'accounts.User'
