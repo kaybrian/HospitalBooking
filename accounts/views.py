@@ -28,9 +28,10 @@ class Patient_register(CreateView):
                     username=username, email=email, password=password1)
                 user.save()
                 user = authenticate(email=email, password=password1)
+                return redirect('patient:PatientDashboard')
 
-    # def get_success_url(self):
-    #     return reverse('cilenthome')
+    def get_success_url(self):
+        return reverse('PatientDashboard')
 
 
 
@@ -44,11 +45,6 @@ class Doctor_register(CreateView):
         password2 = form.cleaned_data.get('password2')
         username = form.cleaned_data.get('username')
         email = form.cleaned_data.get('email')
-        
-        print(password2)
-        print(password1)
-        print(email)
-        print(username)
 
         if form.is_valid():
             if password1 == password2:
