@@ -1,4 +1,3 @@
-from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
@@ -38,11 +37,18 @@ class PatientProfile(models.Model):
 class DoctorProfile(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name='doctor_profile')
-    location = models.CharField(max_length=100, null=True)
+    Address = models.CharField(max_length=100, null=True)
     phone_number = models.CharField(
         max_length=10, blank=False, unique=True, null=True)
     profile_image = models.ImageField(
         default='default.png', null=True, upload_to='profile_pics')
+    city = models.CharField(max_length=50,null=True,blank=True)
+    State = models.CharField(max_length=50,null=True,blank=True)
+    Country = models.CharField(max_length=50,null=True,blank=True)
+    Gender = models.CharField(max_length=50,null=True,blank=True)
+    Date_of_Birth = models.DateField(auto_now_add=False,null=True,blank=True)
+    biography = models.TextField(null=True,blank=True)
+
 
     def __str__(self):
         return self.user.email

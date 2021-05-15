@@ -1,6 +1,6 @@
 from django.views import View
 from .forms import *
-from django.urls import reverse
+from django.urls import reverse,reverse_lazy
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import CreateView
@@ -31,7 +31,7 @@ class Patient_register(CreateView):
                 return redirect('patient:PatientDashboard')
 
     def get_success_url(self):
-        return reverse('PatientDashboard')
+        return reverse('patient:PatientDashboard')
 
 
 
@@ -51,6 +51,11 @@ class Doctor_register(CreateView):
                 user = User.objects.create(
                     username=username, email=email, password=password1)
                 user.save()
+                user = authenticate(email=email, password=password1)
+                return redirect('doctors:Doctordashboard')
+
+    def get_success_url(self):
+        return reverse('doctors:Doctordashboard')
 
 
 class LoginView(View):
