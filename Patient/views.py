@@ -20,3 +20,29 @@ def Profile(request):
 def Favourites(request):
     context = {}
     return render(request,'Patient/favourites.html',context)
+
+
+@login_required(login_url='/accounts/login/')
+def SearchDoctor(request):
+    context = {}
+    return render(request,'Patient/search.html',context)
+
+
+
+@login_required(login_url='/accounts/login/')
+def Booking(request):
+    context = {}
+    return render(request,'Patient/booking.html',context)
+
+
+@login_required(login_url='/accounts/login/')
+def BookingSuccess(request):
+    context = {}
+    return render(request,'Patient/success.html',context)
+
+
+
+@login_required(login_url='/accounts/login/')
+def Payments(request):
+    context = {}
+    return render(request,'Patient/payments.html',context)

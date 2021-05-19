@@ -23,7 +23,7 @@
 <div class="content">
   <div class="container-fluid">
     <div class="row">
-      <!-- Profile Sidebar -->
+     <!-- Profile Sidebar -->
       <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
         <div class="profile-sidebar">
           <div class="widget-profile pro-widget-content">
@@ -50,7 +50,7 @@
           <div class="dashboard-widget">
             <nav class="dashboard-menu">
               <ul>
-                <li>
+                <li class="active">
                   <a href="{% url 'patient:PatientDashboard' %}">
                     <i class="fas fa-columns"></i>
                     <span>Dashboard</span>
@@ -71,7 +71,13 @@
                   </a>
                 </li>
                 {% endcomment %}
-                <li class="active">
+                <li>
+                  <a href="{% url 'patient:profile' %}">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Search Doctor</span>
+                  </a>
+                </li>
+                <li>
                   <a href="{% url 'patient:profile' %}">
                     <i class="fas fa-user-cog"></i>
                     <span>Profile Settings</span>
@@ -94,7 +100,7 @@
           </div>
         </div>
       </div>
-      <!-- /Profile Sidebar -->
+      <!-- / Profile Sidebar -->
 
       <div class="col-md-7 col-lg-8 col-xl-9">
         <div class="card">
