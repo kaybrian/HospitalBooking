@@ -31,3 +31,4 @@ def DoctorProfile(request):
 def ChangePaword(request):
     context = {}
     return render(request,'Doctors/passwordchange.html',context)
+

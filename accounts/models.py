@@ -2,6 +2,11 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
+Gender_CHOICES= [
+('Male', 'Male'),
+('Female', 'Female'),
+]
+
 
 class User(AbstractUser):
     is_patient = models.BooleanField(default=False)
@@ -29,6 +34,7 @@ class PatientProfile(models.Model):
     city = models.CharField(max_length=50,null=True, blank=True)
     District = models.CharField(max_length=150,null=True, blank=True)
     Country = models.CharField(max_length=150,null=True, blank=True)
+    Gender = models.CharField(max_length=150,choices=Gender_CHOICES,default='Male')
 
     def __str__(self):
         return self.user.email

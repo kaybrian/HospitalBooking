@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.views import View
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import * 
 
 
 @login_required(login_url='/accounts/login/')
@@ -46,3 +47,14 @@ def BookingSuccess(request):
 def Payments(request):
     context = {}
     return render(request,'Patient/payments.html',context)
+
+@login_required(login_url='/accounts/login/')
+def EnterUserinfo(request):
+    if request.method == 'POST':
+        form = PatientProfileForm(request.POST or None)
+    else:
+        form = PatientProfileForm()
+
+        
+    context = {'form':form,}
+    return render(request,'Patient/info.html',context)

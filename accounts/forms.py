@@ -1,5 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from .models import User, PatientProfile, DoctorProfile
+from django.forms import fields
+from .models import *
 from django.db import transaction
 from django import forms
 
@@ -78,3 +79,7 @@ class LoginForm(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput, max_length=255)
     password.widget.attrs.update(
         {'class': 'form-control floating', 'placeholder': 'Password'})
+
+
+
+
